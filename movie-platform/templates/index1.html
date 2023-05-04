@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for j in obj1 %}
+<!--<h2>{{j.p_name}}-->
+<!--    {{j.p_decscription}}-->
+<!--    {{j.s_name}}<br></h2>-->
+<a href="{% url 'movie_app:plants' j.id %}">{{j.p_name}}</a><br>
+{% endfor %}
+</body>
+</html>
